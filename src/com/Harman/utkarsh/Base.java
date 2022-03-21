@@ -20,6 +20,14 @@ class Child extends Base{
     {
         System.out.println("Calculator");
     }
+    public @interface Myannotation{
+        int age() default 18;
+        String name();
+    }
+
+    @Myannotation(
+            name = "Utkarsh"
+    )
 
 
     public static void main(String[] args) {
